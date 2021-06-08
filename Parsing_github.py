@@ -1,6 +1,7 @@
 import requests
 from bs4 import BeautifulSoup as bs
 
+#Функция которая парсит введеного пользователя и возвращает изображение пользователя
 def get_profile_image(username) -> str:
     url = f"https://github.com/{username}/"
     res = requests.get(url)
